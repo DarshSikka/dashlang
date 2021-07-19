@@ -1,0 +1,12 @@
+let x be "Question1. What is your name? "
+let y be "How old are you? "
+let z be "What is your favorite fruit? "
+ask x into x
+ask y into y
+ask z into z
+say "Your name is:"
+say x
+say "Your age is:"
+say y
+say "Your favorite fruit is:"
+say z

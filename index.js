@@ -18,8 +18,13 @@ arrayoflines.forEach((line) => {
   } else if (splittedline[0] == "let") {
     const varname = splittedline[1];
     if (splittedline[2] == "be") {
-      if (splittedline[3]) {
-        variables[varname] = splittedline[3];
+      if (!line.includes(`"`)) {
+        if (splittedline[3]) {
+          variables[varname] = splittedline[3];
+        }
+      } else {
+        const quoted = line.split(`"`);
+        variables[varname] = quoted[1];
       }
     }
   } else if (splittedline[0] == "calculate") {
