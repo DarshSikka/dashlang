@@ -1,0 +1,15 @@
+{
+  "name": "dashthelang",
+  "version": "1.0.0",
+  "description": "Highly Highly interpreted language close to english",
+  "main": "index.js",
+  "author": "Darsh Sikka",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "license": "MIT",
+  "bin": "index.js",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}
